@@ -5,13 +5,17 @@ for(let i=2; i<number; i++){
 }
 return true;
 };
-console.log(function soNguyenTo(4))
+console.log(soNguyenTo(7))
 
-function checkSNT(number){
-    if(number <2){return false};
-    for(i=2; i<number; i++){
-        if(number%i===0){return false}
+const inputA=document.getElementById('inputA');
+const inputB=document.getElementById('inputB');
+const button=document.getElementById('button');
+let result=0;
+const showing=document.getElementById('showKetQua')
+button.addEventListener('click',function(){
+    let numberA= Number(inputA.value)
+    let numberB= Number(inputB.value)
+    if(!Number.isInteger(numberA)&&!Number.isInteger(numberB)){
+        showing.innerHTML=`Ban vừa nhập sai Số A và B. Số A và B phải là số Nguyên`
     }
-    return true;
-}
-console.log(checkSNT(23))
+})
