@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@200&display=swap');
+:root{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding:100px;
+}
+
+.header{
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 24px;
+    display:block
+}
+.img{
+    width: 18.67px;
+    height: 18.67px;
+}
+.input{
+    border:none
+}
+
+.menu-right{
+    width: 327px;
+    border: 1px #BFC8E6 solid;
+    display:flex;
+    align-items: center;
+}
+.link{
+    width: 115px;
+    height: 30px;
+    display:flex;
+    align-items: center;
+    padding:16px;
+}
+.menu-left{
+    display:flex;
+}
+.menu{
+    width: 1300px;
+    height: 64px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 74px;
+}
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.self{
+    background-color: #849FFF;
+    border-radius: 8px;
+}
+.name-card{
+    display:flex;
+    width: 327px;
+    height:208px;
+    background-color: #FBFCFF;
+    margin-top: 44px;
+}
+.card-img{
+    width: 97px;
+    height: 97px;
+    margin-right: 16px;
+}
+.card-inform{
+    width: 125px;
+    height: 106px;
+    padding-top: 20px;
+}
+.tag-name{
+    margin-top: 18px;
+    width:125px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.list{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap:16px;
+}
+.second{
+    border-radius: 16px;
+}
+.card-text-name{
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 4px;
+}
+.card-text-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+}
+.tag-design{
+    width: fit-content;
+    height:22px;
+    color:#516FD4;
+    border-radius: 10px;
+    border: 1px solid #BFC8E6;
+    padding: 2px;
+    margin: 4px;
+}
