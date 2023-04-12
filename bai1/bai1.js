@@ -16,6 +16,17 @@ button.addEventListener('click',function(){
     let numberA= Number(inputA.value)
     let numberB= Number(inputB.value)
     if(!Number.isInteger(numberA)&&!Number.isInteger(numberB)){
-        showing.innerHTML=`Ban vừa nhập sai Số A và B. Số A và B phải là số Nguyên`
+        showing.innerHTML=`Ban vừa nhập sai Số A và B. Số A và B phải là số Nguyên`;
+        return;
     }
+    if(numberB<numberA){
+        showing.innerHTML=`Ban nhập số A phải nhỏ hơn số B`;
+        return false;
+    }
+    for(let i=numberA; i<=numberB; i++){
+        if(soNguyenTo(i)){
+            result= result+i
+        }
+    }
+    showing.innerHTML=result;
 })
